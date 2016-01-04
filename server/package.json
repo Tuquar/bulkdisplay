@@ -1,0 +1,31 @@
+{
+  "name": "bulkdisplay",
+  "version": "0.0.1",
+  "description": "Use Vue to display large blocks of data in some way, not necesseraly in the best looking way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tuquar/bulkdisplay.git"
+  },
+  "keywords": [
+    "Vue",
+    "Flexbox",
+    "display"
+  ],
+  "author": "Matthew Lennon",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Tuquar/bulkdisplay/issues"
+  },
+  "homepage": "https://github.com/Tuquar/bulkdisplay#readme",
+  "dependencies": {
+    "del": "^2.2.0",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "path": "^0.12.7",
+    "vue": "^1.0.11"
+  }
+}
