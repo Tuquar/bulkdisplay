@@ -6,6 +6,10 @@ var express = require('express'),
 	Vue = require('vue'),
 	port = 3421;
 
+
+app.use(express.static(path.resolve(__dirname, 'dist')));
+
+
 server.listen(port, function(){
 	console.log('Server listening on port: ' + port);
 });
@@ -13,5 +17,3 @@ server.listen(port, function(){
 server.get('/',function(req, res){
 	res.send()
 });
-
-app.use(express.static(path.resolve(__dirname, 'dist')));
