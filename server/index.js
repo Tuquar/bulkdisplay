@@ -1,19 +1,20 @@
-var express = require('express'),
-	http = require('http'),
-	app = express(),
-	server = http.createServer(app),
+var http = require('http'),
+	koa = require('koa'),
+	serve = require('koa-static'),
+	app = koa(),
+	//server = http.createServer(app),
 	path = require('path'),
 	Vue = require('vue'),
 	port = 3421;
 
 
-app.use(express.static(path.resolve(__dirname, 'dist')));
 
+app.use(serve(__dirname +'client/views'));
 
-server.listen(port, function(){
-	console.log('Server listening on port: ' + port);
+app.use(function* (){
+	this.body = 'Hello World'
 });
 
-server.get('/',function(req, res){
-	res.send()
+app.listen(port, function(){
+	console.log('Server listening on port: ' + port);
 });
